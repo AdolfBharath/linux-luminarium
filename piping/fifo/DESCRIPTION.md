@@ -8,6 +8,7 @@ You create a FIFO using the `mkfifo` command:
 hacker@dojo:~$ mkfifo my_pipe
 hacker@dojo:~$ ls -l my_pipe
 prw-r--r-- 1 hacker hacker 0 Jan 1 12:00 my_pipe
+hacker@dojo:~$ ls -l some_file
 -rw-r--r-- 1 hacker hacker 0 Jan 1 12:00 some_file
 hacker@dojo:~$
 ```
@@ -54,7 +55,7 @@ Here are key differences:
 
 This challenge will be a simple introduction to FIFOs.
 You'll need to create a `/tmp/flag_fifo` file and redirect the stdout of `/challenge/run` to it.
-If you're successful, `/challenge/run` will write the flag into the fifo!
+If you're successful, `/challenge/run` will write the flag into the FIFO!
 Go do it!
 
 ----

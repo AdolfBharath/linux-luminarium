@@ -15,7 +15,7 @@ Can you get the flag?
 
 ----
 **HINT:**
-Like the scripts you explored in [Chaining Commands](../chaining), the `.bashrc` script is just a shell script.
+Like the scripts you explored in [Chaining Commands](/linux-luminarium/chaining), the `.bashrc` script is just a shell script.
 Adding a new line with a command on it (e.g., `echo Hello Hackers`) will get that command executed, so all you really need to think about is what command will get you the flag!
 
 **NOTE:**
@@ -24,4 +24,4 @@ Don't panic --- just add your payload to the end and hope for the best!
 
 **HINT:**
 Need to poke around as `zardus` to debug your solution?
-In practice mode, you can use `sudo su --login zardus` to drop into a Zardus session!
+In Privileged Mode, you can use `sudo su --login zardus` to drop into a Zardus session!

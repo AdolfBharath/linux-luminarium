@@ -12,7 +12,7 @@ drwxr-xr-x 2 hacker hacker 4096 May 22 13:42 pwn_directory
 hacker@dojo:~$
 ```
 
-As a reminder, the first character there is the file type.
+As a reminder, the first character is the file type.
 The next nine characters are the actual access permissions of the file or directory, split into 3 characters denoting permissions for the owning user (now you understand this!), 3 characters denoting the permissions for the owning group (now you understand this as well!), and 3 characters denoting the permissions that all other access (e.g., by other users and other groups) has to the file.
 
 Each character of the three represent permission for a different type:
@@ -44,7 +44,7 @@ hacker@dojo:~$ ls -l /flag
 hacker@dojo:~$
 ```
 
-Here, there is only one bit set: the `r`ead permission for the owning user (in this case, root).
+Here, there is only one bit set: the `r`ead permission for the owning user (in this case, `root`).
 Members of the owning group (the `root` group) and all other users have no access to the file.
 
 You might be wondering how the `chgrp` levels worked, if there is no group access to the file.
@@ -99,7 +99,7 @@ root@dojo:~#
 ```
 
 In this challenge, you must change the permissions of the `/flag` file to read it!
-Typically, you need to have write access to the file in order to change its permissions, but I have made the `chmod` command all-powerful for this level, and you can `chmod` anything you want even though you are the `hacker` user.
+Typically, you need to be the owner of the file in order to change its permissions, but I have made the `chmod` command all-powerful for this level, and you can `chmod` anything you want even though you are the `hacker` user.
 This is an ultimate power.
-The `/flag` file is owned by root, and you can't change that, but you can make it readable.
+The `/flag` file is owned by `root`, and you can't change that, but you can make it readable.
 Go and solve this!
